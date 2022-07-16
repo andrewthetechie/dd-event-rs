@@ -1,0 +1,13 @@
+.cargo/*
+.github/*
+.git/*
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+LICENSE
+Dockerfile
+.gitignore
+.dockerignore
+target/*
+.yamllint
+.pre-commit-config.yaml
