@@ -61,7 +61,7 @@ jobs:
         with:
           file: "Cargo.toml"
           field: "package.name"
-      - uses: taiki-e/github-actions/install-rust@main
+      - uses: dtolnay/rust-toolchain@stable
       - name: Setup rust
         uses: actions-rs/toolchain@v1
         with:
