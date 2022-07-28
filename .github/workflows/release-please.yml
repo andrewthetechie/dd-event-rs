@@ -11,4 +11,3 @@ jobs:
         with:
           token: ${{ secrets.THIS_PAT }}
           release-type: rust
-          package-name: dd-metric
