@@ -42,4 +42,4 @@ jobs:
           cargo install cargo-toml-lint
           cargo-toml-lint Cargo.toml
       - name: YAML Lint
-        uses: ibiqlik/action-yamllint@v3.1.0
+        uses: ibiqlik/action-yamllint@v3.1.1
