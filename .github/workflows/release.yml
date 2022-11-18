@@ -68,7 +68,7 @@ jobs:
           toolchain: stable
           override: true
           target: ${{ matrix.target }}
-      - uses: Swatinem/rust-cache@v1
+      - uses: Swatinem/rust-cache@v2
         with:
           cache-on-failure: true
       - run: echo "RUSTFLAGS=${RUSTFLAGS} -C target-feature=+crt-static" >> "${GITHUB_ENV}"
