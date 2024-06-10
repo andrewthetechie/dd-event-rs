@@ -80,12 +80,12 @@ jobs:
           command: build
           args: --release --target ${{ matrix.target }} --locked
       # we use these artifact later in the docker build to prevent having to rebuild
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: ${{ matrix.target == 'aarch64-unknown-linux-musl' }}
         with:
           name: ${{ steps.read_cargo_toml.outputs.value }}-arm64
           path: target/${{ matrix.target }}/release/${{ steps.read_cargo_toml.outputs.value }}
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: ${{ matrix.target == 'x86_64-unknown-linux-musl' }}
         with:
           name: ${{ steps.read_cargo_toml.outputs.value }}-amd64
