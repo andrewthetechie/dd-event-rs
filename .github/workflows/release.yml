@@ -126,11 +126,11 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: ${{ github.repository}}
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: ${{ steps.read_cargo_toml.outputs.value }}-amd64
           path: ${{ steps.read_cargo_toml.outputs.value }}-amd64
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: ${{ steps.read_cargo_toml.outputs.value }}-arm64
           path: ${{ steps.read_cargo_toml.outputs.value }}-arm64
